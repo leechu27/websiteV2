@@ -5,6 +5,7 @@ body {
 
 .top-nav {
     position: fixed;
+    width: 100vw;
     top: 0;
 }
 
@@ -44,8 +45,13 @@ ul.top-nav-links li a.active {color: orange;
 
 .bottom-nav {
     position: fixed;
+    width: 100vw;
     bottom: 0;
     right: 0;
+}
+
+ul.bottom-nav-links li a:hover {
+    color: orange;
 }
 
 ul.bottom-nav-links {
@@ -56,8 +62,12 @@ ul.bottom-nav-links {
     margin: 0;
 }
 
-ul.bottom-nav-links li {
+ul.bottom-nav-links li:not(.last-updated) {
     float: right;
+}
+
+ul.bottom-nav-links li.last-updated {
+    float: left;
 }
 
 ul.bottom-nav-links li a {
