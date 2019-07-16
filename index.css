@@ -1,6 +1,19 @@
 body {
-    background-color: black;
-    margin: 0
+    background-image: url("smaller.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-device-width: 1000px) {
+    body {
+        background-image: url("temp.jpg");
+        background-repeat: no-repeat;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .top-nav {
@@ -39,9 +52,6 @@ ul.top-nav-links li a.active {color: orange;
     ul.top-nav-links li {float: none;}
 }
 
-.me-picture img {
-    width: 100vw;
-}
 
 .bottom-nav {
     position: fixed;
