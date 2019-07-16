@@ -16,9 +16,14 @@ body {
     }
 }
 
+a {
+    font-family: 'Times New Roman';
+}
+
 .top-nav {
     position: fixed;
     width: 100vw;
+    height: 40vw;
     top: 0;
 }
 
@@ -40,9 +45,13 @@ ul.top-nav-links li a {
     text-decoration: none;
     font-size: 30px;
     padding: 40px 20px 40px 20px;
+    transition: color 0.5s ease-out;
 }
 
-ul.top-nav-links li a:hover:not(.active) {color: orange;}
+ul.top-nav-links li a:hover:not(.active) {
+    color: orange;
+}
+
 ul.top-nav-links li a.active {color: orange;
     pointer-events: none;
 }
@@ -86,6 +95,7 @@ ul.bottom-nav-links li a {
     text-decoration: none;
     font-size: 30px;
     padding: 40px 20px 40px 20px;
+    transition: all 0.5s ease-out;
 }
 
 @media screen and (max-width: 600px) {
