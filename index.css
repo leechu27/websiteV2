@@ -47,6 +47,10 @@ ul.top-nav-links li a {
     transition: color 0.5s ease-out;
 }
 
+ul.top-nav-links li:not(:last-child) {
+    border-right: 2px solid rgb(255,255,255);
+}
+
 ul.top-nav-links li a:hover:not(.active) {
     color: orange;
 }
@@ -80,6 +84,10 @@ ul.bottom-nav-links {
     margin: 0;
 }
 
+ul.bottom-nav-links li:not(:last-child) {
+    border-left: 2px solid rgb(255,255,255);
+}
+
 ul.bottom-nav-links li:not(.last-updated) {
     float: right;
 }
@@ -101,3 +109,31 @@ ul.bottom-nav-links li a {
     ul.bottom-nav-links li.right,
     ul.bottom-nav-links li {float: none;}
 }
+
+h1.image-text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 40px;
+    color: rgb(255,255,255);
+    border-right: 2px solid rgb(255,255,255);
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 2s steps(44) 1s 1 normal both,
+               blinkTextCursor 1000ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 620px;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
