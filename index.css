@@ -1,5 +1,5 @@
 body {
-    background-image: url("smaller.png");
+    background-image: url("temp.jpg");
     background-repeat: no-repeat;
     margin: 0;
     width: 100%;
@@ -11,7 +11,7 @@ body {
         background-image: url("temp.jpg");
         background-repeat: no-repeat;
         margin: 0;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 }
@@ -23,7 +23,6 @@ a {
 .top-nav {
     position: fixed;
     width: 100vw;
-    height: 40vw;
     top: 0;
 }
 
@@ -31,7 +30,7 @@ ul.top-nav-links {
     background-color: black;
     list-style-type: none;
     overflow: hidden;
-    padding: 0 0;
+    padding: 20px 0;
     margin: 0;
 }
 
@@ -77,7 +76,7 @@ ul.bottom-nav-links {
     background-color: black;
     list-style-type: none;
     overflow: hidden;
-    padding: 0 0;
+    padding: 20px 0;
     margin: 0;
 }
 
