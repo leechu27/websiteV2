@@ -2,6 +2,9 @@ body {
     background-image: url("temp.jpg");
     margin: 0;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    background-color: black;
     
 }
 
@@ -20,7 +23,7 @@ ul.top-nav-links {
     background-color: black;
     list-style-type: none;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 1.5vw 0;
     margin: 0;
 }
 
@@ -32,13 +35,13 @@ ul.top-nav-links li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
-    padding: 40px 20px 40px 20px;
+    font-size: 2vw;
+    padding: 2vw 1vw;
     transition: color 0.5s ease-out;
 }
 
 ul.top-nav-links li:not(:last-child) {
-    border-right: 2px solid rgb(255,255,255);
+    border-right: 0.1vw solid rgb(255,255,255);
 }
 
 ul.top-nav-links li a:hover:not(.active) {
@@ -70,12 +73,12 @@ ul.bottom-nav-links {
     background-color: black;
     list-style-type: none;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 1.5vw 0;
     margin: 0;
 }
 
 ul.bottom-nav-links li:not(:last-child) {
-    border-left: 2px solid rgb(255,255,255);
+    border-left: 0.1vw solid rgb(255,255,255);
 }
 
 ul.bottom-nav-links li:not(.last-updated) {
@@ -90,8 +93,8 @@ ul.bottom-nav-links li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
-    padding: 40px 20px 40px 20px;
+    font-size: 2vw;
+    padding: 2vw 1vw;
     transition: all 0.5s ease-out;
 }
 
@@ -102,16 +105,16 @@ ul.bottom-nav-links li a {
 
 h1.image-text {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    font-size: 40px;
+    top: 15vw;
+    left: 20vw;
+    font-size: 4vw;
     color: rgb(255,255,255);
     border-right: 2px solid rgb(255,255,255);
     overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.1vw black;
     transform: translateY(-50%);
 }
 
@@ -122,7 +125,7 @@ h1.image-text {
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 620px;}
+    to{width: 62vw;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: rgba(255,255,255,.75);}
