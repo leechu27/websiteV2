@@ -2,14 +2,16 @@
         <link rel="stylesheet" type="text/css" href="../css/nav.css"/>
         <link href="https://fonts.googleapis.com/css?family=Graduate&display=swap" rel="stylesheet">
 </head>
-<div class="top-nav">
-        <ul class="top-nav-links">
-            <li><a class="active" href="home.html"> Home </a></li>
-            <li><a href="#"> About </a></li>
-            <li><a href="#">Side Projects</a></li>
-            <li><a href="#">Work Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+<div id="nav-pages">
+    <div class="top-nav">
+            <ul class="top-nav-links">
+                <li><a href="home.html"> Home </a></li>
+                <li><a> About </a></li>
+                <li><a>Side Projects</a></li>
+                <li><a>Work Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
 </div>
 
 <div class="bottom-nav">
@@ -20,8 +22,19 @@
             <li><a href="#" class="last-updated">  Website last updated: TBD</a></li>
         </ul>
 </div>
+<script>
 
-$( '#topheader .navbar-nav a' ).on( 'click', function () {
-	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
-	$( this ).parent( 'li' ).addClass( 'active' );
-});
+    var btnContainer = document.getElementById("nav-pages");
+    var pages = btnContainer.getElementsByTagName("A");
+    for (var i = 0; i < pages.length; i++) {
+        if (pages[i].href == window.location.href) {
+            pages[i].className += 'active';
+        }
+        pages[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "");
+            this.className += " active";
+        });
+    }
+    
+</script>

@@ -1,21 +1,25 @@
 body {
     background-image: url("../images/Me.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    background-size: 100% 100%;
+}
+
+html {
+    height: 100%;
 }
 
 h1.image-text {
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
+    padding-left: 0.5vw;
     top: 15vw;
     left: 20vw;
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgb(255,255,255);
     border-right: 2px solid rgb(255,255,255);
     overflow: hidden;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 0.1vw black;
     transform: translateY(-50%);
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -25,13 +29,13 @@ h1.image-text {
 /* Animation */
 .anim-typewriter{
     animation: typewriter 2s steps(44) 1s 1 normal both,
-               blinkTextCursor 1000ms steps(44) infinite normal;
+               blinkTextCursor 2000ms steps(44) infinite normal;
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 62vw;}
+    to{width: 58vw;}
   }
   @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
+    from{border-right-color: transparent}
     to{border-right-color: transparent;}
   }
