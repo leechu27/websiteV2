@@ -1,7 +1,9 @@
 body {
+    padding-top: 5vw;
+
+    background-color: lightblue;
     margin: 0;
-    background-color: black;
-    font-family: 'Graduate', cursive;
+    font-family: 'Roboto', cursive;
 }
 .top-nav {
     position: fixed;
@@ -73,6 +75,7 @@ ul.bottom-nav-links {
 
 ul.bottom-nav-links li:not(:last-child) {
     border-left: 0.1vw solid rgb(255,255,255);
+    right: 0;
 }
 
 ul.bottom-nav-links li:not(.last-updated) {
