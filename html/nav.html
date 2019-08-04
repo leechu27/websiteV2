@@ -1,5 +1,5 @@
 <head>
-    
+        <title> Chun Ho Lee</title>
         <link rel="stylesheet" type="text/css" href="../css/nav.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
             <li><a href="../resume/Resume.pdf" target="_blank"> Resume </a></li>
             <li><a href="https://github.com/leechu27" target="_blank"> Github </a></li>
             <li><a href="https://ca.linkedin.com/in/chun-ho-lee-dev" target="_blank"> Linked In </a></li>
-            <li><a href="#" class="last-updated">  Website last updated: TBD</a></li>
+            <li><a id="last-updated"></a></li>
         </ul>
 </div>
 <script>
@@ -37,5 +37,21 @@
             this.className += " active";
         });
     }
+
+    var xmlhttp = new XMLHttpRequest();
+var url = "https://api.github.com/repos/leechu27/websitev2";
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var result = JSON.parse(this.responseText);
+        var lastUpdated = "Website last updated: " + result.updated_at.split('T')[0];
+        document.getElementById("last-updated").innerHTML = lastUpdated;
+
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+
     
 </script>
