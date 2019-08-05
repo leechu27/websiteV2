@@ -1,6 +1,4 @@
 body {
-    padding-top: 5vw;
-
     background-color: lightblue;
     margin: 0;
     font-family: 'Roboto', cursive;
@@ -9,6 +7,7 @@ body {
     position: fixed;
     width: 100vw;
     top: 0;
+    left: 0;
     
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -83,7 +82,7 @@ ul.bottom-nav-links li:not(:last-child) {
 
 
 ul.bottom-nav-links li a {
-    color: white;
+    color: white !important;
     text-align: center;
     text-decoration: none;
     font-size: 2vw;
