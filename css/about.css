@@ -1,17 +1,25 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
 .about-img img {
     width: 30vw;
     height: auto;
     float: left;
-    margin: 0 2vw;
 }
 
-.about-main {
-    margin-top: 8vw;
-}
 
 .text-area {
-    width: 98vw;
+    background-image: url("../images/wood-text.jpg");
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 1vw;
 }
-p {
-     font-size: 2vw; 
+.text-area p {
+     font-size: 2vw;
+     color: yellow; 
 }

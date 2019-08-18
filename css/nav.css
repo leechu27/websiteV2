@@ -1,40 +1,40 @@
 body {
-    background-color: lightblue;
-    margin: 0;
+    margin: 0 0 0 220px;
     font-family: 'Roboto', cursive;
 }
 .top-nav {
     position: fixed;
-    width: 100vw;
+    width: 220px;
+    height: 91.5vh;
+    margin-top: 0;
     top: 0;
     left: 0;
-    
+    display: block;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
-ul.top-nav-links {
+.top-nav ul {
+    overflow-y: auto;
     list-style-type: none;
-    overflow: hidden;
-    padding: 1.5vw 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-
 ul.top-nav-links li {
     float: left;
 }
 
 ul.top-nav-links li a {
+    display: block;
     color: white;
-    text-align: center;
     text-decoration: none;
-    font-size: 2vw;
-    padding: 2vw 1vw;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
     transition: color 0.5s ease-out;
 }
 
-ul.top-nav-links li:not(:last-child) {
-    border-right: 0.1vw solid rgb(255,255,255);
-}
 
 ul.top-nav-links li a:hover:not(.active) {
     color: orange;
@@ -85,8 +85,8 @@ ul.bottom-nav-links li a {
     color: white !important;
     text-align: center;
     text-decoration: none;
-    font-size: 2vw;
-    padding: 2vw 1vw;
+    font-size: 1vw;
+    padding: 1vw 1vw;
 }
 
 @media screen and (max-width: 600px) {
