@@ -6,15 +6,12 @@ html {
     height: 100%;
 }
 
-h1.image-text {
-    background-color: rgba(0, 0, 0, 0.4);
+h1 {
     position: absolute;
     padding-left: 0.5vw;
-    top: 10vw;
-    left: 14vw;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: rgb(255,255,255);
-    border-right: 2px solid rgb(255,255,255);
+    text-shadow: #000 0px 0px 2px;
     overflow: hidden;
     white-space: nowrap;
     overflow: hidden;
@@ -24,16 +21,42 @@ h1.image-text {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+.text1 {
+  top: 40vh;
+  left: 60vw;
+}
+.text2 {
+  animation-delay: 2s;
+  top: 50vh;
+  left: 33vw;
+}
 /* Animation */
-.anim-typewriter{
-    animation: typewriter 2s steps(44) 1s 1 normal both,
+.anim-typewriter1{
+    animation: typewriter1 2s steps(44) 1s 1 normal both,
                blinkTextCursor 2000ms steps(44) infinite normal;
   }
-  @keyframes typewriter{
+  @keyframes typewriter1{
     from{width: 0;}
-    to{width: 73vw;}
+    to{width: 24vw;}
   }
+
+
+  .anim-typewriter2{
+    animation: typewriter2 2s steps(44) 3s 1 normal both,
+               blinkTextCursor 2000ms steps(44) infinite normal;
+  }
+  @keyframes typewriter2{
+    from{width: 0;}
+    to{width: 40vw;}
+  }
+  
   @keyframes blinkTextCursor{
+    
     from{border-right-color: transparent}
     to{border-right-color: transparent;}
+  }
+
+  .home-picture {
+    width: 86vw;
+    height: 96vh;
   }

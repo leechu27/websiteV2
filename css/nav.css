@@ -10,7 +10,7 @@ body {
     top: 0;
     left: 0;
     display: block;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #4CAF50;
 }
 .top-nav ul {
     overflow-y: auto;
@@ -54,7 +54,7 @@ ul.top-nav-links li a.active {
 
 
 .bottom-nav {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: black;
     position: fixed;
     width: 100vw;
     bottom: 0;
