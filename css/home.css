@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-image: url('../images/home.jpg');
+    background-size: 100% 100%;
 }
 
 html {
@@ -8,9 +9,8 @@ html {
 
 h1 {
     position: absolute;
-    padding-left: 0.5vw;
     font-size: 1.5rem;
-    color: rgb(255,255,255);
+    color: #D4C1EC;
     text-shadow: #000 0px 0px 2px;
     overflow: hidden;
     white-space: nowrap;
@@ -54,9 +54,4 @@ h1 {
     
     from{border-right-color: transparent}
     to{border-right-color: transparent;}
-  }
-
-  .home-picture {
-    width: 86vw;
-    height: 96vh;
   }

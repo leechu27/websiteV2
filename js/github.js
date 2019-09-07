@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+/*
 var btnContainer = document.getElementById("nav-pages");
 var pages = btnContainer.getElementsByTagName("A");
 for (var i = 0; i < pages.length; i++) {
@@ -11,6 +12,7 @@ for (var i = 0; i < pages.length; i++) {
         this.className += " active";
     });
 }
+*/
 
 var xmlhttp = new XMLHttpRequest();
 var url = "https://api.github.com/repos/leechu27/websitev2";

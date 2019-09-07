@@ -1,96 +1,37 @@
 body {
-    margin: 0 0 0 14vw;
     font-family: 'Roboto', cursive;
 }
-.top-nav {
-    position: fixed;
-    width: 14vw;
-    height: 93vh;
-    margin-top: 0;
-    top: 0;
-    left: 0;
-    display: block;
-    background-color: #4CAF50;
-}
-.top-nav ul {
-    overflow-y: auto;
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 220px;
-  height: 100%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
-ul.top-nav-links li {
-    float: left;
-}
 
-ul.top-nav-links li a {
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    bottom: 10px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
     display: block;
     color: white;
-    text-decoration: none;
-    font-size: 1.5vw;
-    padding: 1vw 2vw;
-    transition: color 0.5s ease-out;
-}
-
-
-ul.top-nav-links li a:hover:not(.active) {
-    color: orange;
-    cursor: pointer;
-    
-}
-
-ul.top-nav-links li a.active {
-    color: orange;
-    pointer-events: none;
-}
-
-@media screen and (max-width: 600px) {
-    ul.top-nav-links li.right,
-    ul.top-nav-links li {float: none;}
-}
-
-
-.bottom-nav {
-    background-color: black;
-    position: fixed;
-    width: 100vw;
-    height: 7vh;
-    bottom: 0;
-    right: 0;
-}
-
-ul.bottom-nav-links li a:hover {
-    color: orange;
-}
-
-ul.bottom-nav-links {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 1.5vw 0;
-    margin: 0;
-}
-
-ul.bottom-nav-links li:not(:last-child):not(:nth-last-child(2)) {
-    border-left: 0.1vw solid rgb(255,255,255);
-}
-
-ul.bottom-nav-links li:not(:last-child) {
-    float: right;
-}
-
-
-ul.bottom-nav-links li a {
-    color: white !important;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 1vw;
-    padding: 1vw 1vw;
+    background-color: #736CED;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+ul.external-links {
+    right: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    ul.bottom-nav-links li.right,
-    ul.bottom-nav-links li {float: none;}
+ul.internal-links {
+    left: 40vw;
 }
