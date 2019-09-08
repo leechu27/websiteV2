@@ -18,14 +18,23 @@ ul {
   li a {
     display: block;
     color: white;
+    border: 1px solid white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #736CED;
+    background-color: transparent;
   }
   
-  li a:hover {
-    background-color: #111;
+  li a:hover, .active {
+    background-color: #736CED;
+  }
+
+  .active {
+    pointer-events: none;
+  }
+
+  .icon {
+    width: 16px;
   }
 
 ul.external-links {
