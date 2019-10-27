@@ -3,7 +3,7 @@ body {
 }
 
 ul {
-    position: absolute;
+    position: inherit;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@ ul {
     display: block;
     color: white;
     border: 1px solid white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     background-color: transparent;
@@ -33,14 +32,12 @@ ul {
     pointer-events: none;
   }
 
-  .icon {
-    width: 16px;
-  }
 
-ul.external-links {
-    right: 10px;
+
+.nav-links {
+  position: relative;
+  bottom: 10vh;
+  display: flex;
+  justify-content: space-around;
 }
 
-ul.internal-links {
-    left: 40vw;
-}
